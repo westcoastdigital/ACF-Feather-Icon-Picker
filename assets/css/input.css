@@ -1,0 +1,94 @@
+.acf-feather-icon-wrapper {
+    max-width: 800px;
+}
+
+.feather-icon-search {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.feather-icon-search:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.acf-feather-icon-radio-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #fff;
+}
+
+.acf-feather-icon-radio-wrapper.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.acf-feather-icon-radio-wrapper.horizontal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.acf-feather-icon-option {
+    position: relative;
+}
+
+.acf-feather-icon-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.acf-feather-icon-option label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #fff;
+}
+
+.acf-feather-icon-option input[type="radio"]:checked + label {
+    background-color: #2271b1;
+    color: white;
+    border-color: #135e96;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.acf-feather-icon-option input[type="radio"]:checked + label svg {
+    stroke: white;
+}
+
+.acf-feather-icon-option label:hover {
+    background-color: #f0f0f0;
+}
+
+.acf-feather-icon-option input[type="radio"]:checked + label:hover {
+    background-color: #135e96;
+}
+
+.acf-feather-icon-option svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+}
+
+.acf-feather-icon-option .icon-name {
+    font-size: 13px;
+}
+
+/* Highlight the selected option when filtered */
+.acf-feather-icon-option:only-child label {
+    background-color: #f0f8ff;
+    border-color: #2271b1;
+}
