@@ -13,7 +13,7 @@ Domain Path:  /languages
 */
 
 // exit if accessed directly
-if (!defined('ABSPATH')) exit
+if (!defined('ABSPATH')) exit;
 
 // include field
 function include_acf_field_types() {
